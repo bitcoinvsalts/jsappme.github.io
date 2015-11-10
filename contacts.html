@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tree The World</title>
+
+  <!--SEO Meta Tags-->
+  <meta name="description" content="Tree the World is a social institution leveraging the latest technologies to focus on Tree Awareness, Planting and Preservation." />
+  <meta name="keywords" content="tree, preservation, social, map" />
+  <meta name="author" content="JSapp.me" />
+
+  <!--Mobile Specific Meta Tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Pixeden Stroke Icons -->
+  <link href="css/vendor/pixeden.css" rel="stylesheet" media="screen">
+
+  <!-- All Theme Styles including Bootstrap, FontAwesome, etc. compiled from styles.scss-->
+  <link href="css/styles.min.css" rel="stylesheet" media="screen">
+
+  <!--Modernizr / Detectizr-->
+  <script src="js/vendor/modernizr.custom.js"></script>
+  <script src="js/vendor/detectizr.min.js"></script>
+
+  <!--Google Maps API-->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5DLwPPVAz88_k0yO2nmFe7T9k1urQs84"></script>
+
+</head>
+
+<!-- Body -->
+<!-- "is-preloader preloading" is a helper classes if preloader is enabled. -->
+<body class="is-preloader preloading">
+
+  <!-- Preloader -->
+  <!--
+      Data API:
+      data-spinner - Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+      data-screenbg - Screen background color. Hex, RGB or RGBA colors
+   -->
+  <div id="preloader" data-spinner="spinner7" data-screenbg="#fff"></div>
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Navbar -->
+    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. You can also use modifier class like: "navbar-light" to change navbar apperance. The screen width at which navbar collapses can be controlled through the variable "$nav-collapse" in sass/variables.scss -->
+    <header class="navbar navbar-light navbar-sticky">
+      <div class="container">
+        <a href="index.html" class="site-logo">
+          <img src="img/logo-default.png" class="logo-default" alt="JSapp.me">
+          <img src="img/logo-alt.png" class="logo-alt" alt="JSapp.me">
+        </a><!-- .site-logo -->
+
+        <!-- Mobile Menu Toggle -->
+        <div class="nav-toggle"><span></span></div>
+        <div class="clearfix">
+
+          <div class="toolbar text-right">
+            <!-- <a href="#intro" class="btn btn-sm btn-ghost btn-default scroll-to" data-offset-top="-40">We are hiring</a> -->
+            <a href="contacts.html" class="btn btn-sm btn-warning scroll-to" data-offset-top="70">Contact us</a>
+          </div><!-- .toolbar -->
+
+          <!-- Use modifier class to apply different submenu (dropdown) animations. Possible options: .submenu-slideUp, .submenu-slideDown, .submenu-flipIn. Please note if no class added to .main-navigation default fadeIn animation will be applied. Note: this is applicable only for Desktop. -->
+          <nav class="main-navigation submenu-flipIn">
+            <ul class="menu">
+              <li class="has-submenu current"><a href="index.html">Home</a>
+                <!--
+                <ul class="submenu">
+                  <li><a href="contacts.html">Contact us</a></li>
+                </ul>
+                -->
+              </li>
+              <li class="has-submenu current"><a href="media.html">Media</a>
+            </ul>
+          </nav><!-- .main-navigation -->
+        </div><!-- .clearfix -->
+      </div><!-- .container -->
+    </header><!-- .navbar -->
+
+    <!-- Page Title -->
+    <!-- Remove ".light-skin" class to make page title dark. In this case it is recomended to remove <span class="overlay"> and background-image as well to make page titlcve with clean gray background. -->
+    <div class="page-title text-center light-skin" style="background-image: url(img/ttw_contact.png);">
+      <span class="overlay"></span>
+      <div class="container">
+        <h1>Contacts</h1>
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a>
+          <span>Contacts</span>
+        </div>
+      </div>
+    </div><!-- .page-title -->
+
+    <!-- Contact Info -->
+    <section class="container">
+      <div class="row">
+        <div class="col-sm-6 space-bottom-2x">
+          <h3>Get in touch with us</h3>
+          <p>We are a team of humble co-founders with a big vision: to create a movement that brings global awareness to the beauty, soul and importance to protect and grow trees through means of an evolving social impact app that appeals to the current (and future) FB & Instagram generation. We’ve come together from various parts of the world (US, France, Germany and Canada) and found our home in Costa Rica where we combine our expertise in coding, social media, production and startup success with our passion for nature and the understanding that fundamental change is due.</p>
+        </div><!-- .col-sm-6.space-bottom-2x -->
+        <div class="col-sm-6 space-bottom-2x">
+          <h3>Contact Information</h3>
+          <ul class="fa-ul">
+            <li>
+              <i class="fa-li fa fa-building"></i>
+              <strong>Tree The World</strong><br>
+              Silicon Beach<br>
+              Playa Santa Teresa, Costa Rica
+            </li>
+            <li><i class="fa-li fa fa-phone"></i>+506-8541-0149</li>
+            <li><i class="fa-li fa fa-envelope"></i><a href="mailto:contact@treethe.world">contact@treethe.world</a></li>
+            <!--<li><i class="fa-li fa fa-skype"></i><a href="#">oswebsitesforsale</a></li>-->
+          </ul>
+        </div><!-- .col-sm-6.space-bottom-2x -->
+      </div><!-- .row -->
+    </section><!-- .container -->
+
+    <!-- Data API:
+         data-height="500" height of the map in pixels
+         data-address="Your address" string
+         data-zoom="number" to control map zoom when loaded
+         data-disable-controls="false/true" enable/disable map controls like pan, zoom, etc.
+         data-scrollwheel="true/false" enable/disable mouse scroll wheel zoom
+         data-marker="path_to_your_image" path to custom marker image
+         data-marker-title=" Your title" appears on marker hover
+         data-styles="[array]" you can adjust the look and feel of your map. Recommend to use https://snazzymaps.com
+     -->
+    <section class="google-map space-bottom-3x"
+         data-height="500"
+         data-address="Playa Santa Teresa, Costa Rica"
+         data-zoom="6"
+         data-disable-controls="false"
+         data-scrollwheel="false"
+         data-marker="../img/map-marker.png"
+         data-marker-title="JSapp.me Office"
+         data-styles='[
+            {
+                "featureType": "administrative",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "lightness": 33
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "color": "#f2e5d4"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#c5dac6"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "labels",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "lightness": 20
+                    }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "lightness": 20
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#c5c6c6"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#e4d7c6"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#fbfaf7"
+                    }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "color": "#acbcc9"
+                    }
+                ]
+            }
+        ]'
+    ></section><!-- .google-map.space-bottom-3x -->
+
+    <!-- Contact Form -->
+    <section class="container space-bottom-2x">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <h3>Drop us a line</h3>
+          <form method="post" class="ajax-form space-top" data-formtype="contact" method="post" action="http://formspree.io/contact@treethe.world">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="cont_form_name" class="sr-only">Name</label>
+                  <input type="text" class="form-control input-alt" name="name" id="sc_contact_form_username" placeholder="Name">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="cont_form_email" class="sr-only">Email</label>
+                  <input type="email" class="form-control input-alt" name="email" id="sc_contact_form_email" placeholder="Email">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cont_form_message" class="sr-only">Message</label>
+              <textarea name="message" id="sc_contact_form_message" class="form-control input-alt" rows="7" placeholder="Enter your message"></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-alt btn-default">Send Message</button>
+            </div>
+            <!-- Validation Response -->
+            <div class="response-holder"></div>
+            <input type="hidden" name="_subject" value="JSapp Contact" />
+          </form><!-- .ajax-form -->
+        </div>
+      </div><!-- .row -->
+    </section><!-- .container.space-bottom-2x -->
+
+    <!-- Scroll To Top Button -->
+    <a href="#" class="scroll-to-top-btn">
+      <i class="fa fa-angle-up"></i>
+    </a><!-- .scroll-to-top-btn -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+
+            <div class="space-bottom-2x visible-xs"></div>
+            <a href="index.html" class="footer-logo">
+              <img src="img/logo-default.png" alt="ZurApp">
+            </a><!-- .footer-logo -->
+
+            <div class="social-bar">
+              <a href="https://twitter.com/treethe_world" class="sb-twitter" target="_new" data-toggle="tooltip" data-placement="top" title="Twitter">
+                <i class="fa fa-twitter"></i>
+                <span></span>
+              </a>
+              <a href="https://instagram.com/treetheworld/" target="_new" class="sb-instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                <i class="fa fa-instagram"></i>
+                <span></span>
+              </a>
+              <a href="https://www.facebook.com/treetheworld" target="_new" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                <i class="fa fa-facebook"></i>
+                <span></span>
+              </a>
+            </div><!-- .social-bar -->
+
+            <div class="copyright">
+              <p>Mobile app and website developed by <a href="http://jsapp.me/" target="_blank">JSapp.me</a>.</p>
+            </div><!-- .copyright -->
+
+          </div><!-- .col-md-7 -->
+
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </footer><!-- .footer -->
+  </div><!-- .page-wrapper -->
+
+  <!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
+  <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/preloader.min.js"></script>
+  <script src="js/vendor/placeholder.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/velocity.min.js"></script>
+  <script src="js/vendor/gmap3.min.js"></script>
+  <!--<script src="mailer/mailer.js"></script>-->
+  <script src="js/scripts.js"></script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-69682558-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+</body><!-- <body> -->
+
+</html>

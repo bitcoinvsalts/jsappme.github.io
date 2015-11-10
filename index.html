@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tree The World</title>
+
+  <!--SEO Meta Tags-->
+  <meta name="description" content="Tree the World is a social institution leveraging the latest technologies to focus on Tree Awareness, Planting and Preservation." />
+  <meta name="keywords" content="tree, preservation, social, map" />
+  <meta name="author" content="JSapp.me" />
+
+  <!--Mobile Specific Meta Tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Pixeden Stroke Icons -->
+  <link href="css/vendor/pixeden.css" rel="stylesheet" media="screen">
+
+  <!-- All Theme Styles including Bootstrap, FontAwesome, etc. compiled from styles.scss-->
+  <link href="css/styles.css" rel="stylesheet" media="screen">
+
+  <!--Modernizr / Detectizr-->
+  <script src="js/vendor/modernizr.custom.js"></script>
+  <script src="js/vendor/detectizr.min.js"></script>
+
+</head>
+
+<!-- Body -->
+<!-- "is-preloader preloading" is a helper classes if preloader is enabled. -->
+<body class="is-preloader preloading">
+
+  <!-- Preloader -->
+  <!--
+      Data API:
+      data-spinner - Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+      data-screenbg - Screen background color. Hex, RGB or RGBA colors
+   -->
+  <div id="preloader" data-spinner="spinner7" data-screenbg="#fff"></div>
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Navbar -->
+    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. You can also use modifier class like: "navbar-light" to change navbar apperance. The screen width at which navbar collapses can be controlled through the variable "$nav-collapse" in sass/variables.scss -->
+    <header class="navbar navbar-light navbar-sticky">
+      <div class="container">
+        <a href="index.html" class="site-logo">
+          <img src="img/logo-default.png" class="logo-default" alt="JSapp.me">
+          <img src="img/logo-alt.png" class="logo-alt" alt="JSapp.me">
+        </a><!-- .site-logo -->
+
+        <!-- Mobile Menu Toggle -->
+        <div class="nav-toggle"><span></span></div>
+        <div class="clearfix">
+
+          <div class="toolbar text-right">
+            <!-- <a href="contacts.html" class="btn btn-sm btn-ghost btn-default scroll-to" data-offset-top="-40">We are hiring</a> -->
+            <a href="contacts.html" class="btn btn-sm btn-warning scroll-to" data-offset-top="70">Contact us</a>
+          </div><!-- .toolbar -->
+
+          <!-- Use modifier class to apply different submenu (dropdown) animations. Possible options: .submenu-slideUp, .submenu-slideDown, .submenu-flipIn. Please note if no class added to .main-navigation default fadeIn animation will be applied. Note: this is applicable only for Desktop. -->
+          <nav class="main-navigation submenu-flipIn">
+            <ul class="menu">
+              <li class="has-submenu current"><a href="index.html">Home</a>
+                <!--
+                <ul class="submenu">
+                  <li><a href="contacts.html">Contact us</a></li>
+                </ul>
+                -->
+              </li>
+              <li class="has-submenu current"><a href="media.html">Media</a>
+              </li>
+            </ul>
+          </nav><!-- .main-navigation -->
+        </div><!-- .clearfix -->
+      </div><!-- .container -->
+    </header><!-- .navbar -->
+
+    <!-- Device Slider -->
+    <section class="device-slider">
+      <span class="angle"></span>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <!-- Phone Carousel -->
+            <!-- Data API:
+              data-loop="true/false" enable/disable looping
+              data-autoplay="true/false" enable/disable carousel autoplay
+              data-interval="3000" autoplay interval timeout in miliseconds
+             -->
+            <div class="phone-carousel" data-loop="true" data-autoplay="true" data-interval="7423">
+              <img src="img/device-slider/phone.png" class="phone-mask" alt="Phone">
+              <!-- Fallback Cover Screen -->
+              <div class="cover">
+                <img src="img/device-slider/screen01.png" alt="Screen 1">
+              </div>
+              <div class="carousel">
+                <div class="inner">
+                  <img src="img/device-slider/screen01.png" alt="Screen 1">
+                  <img src="img/device-slider/screen02.png" alt="Screen 2">
+                  <img src="img/device-slider/screen03.png" alt="Screen 3">
+                  <img src="img/device-slider/screen04.png" alt="Screen 4">
+                  <img src="img/device-slider/screen05.png" alt="Screen 5">
+                </div>
+              </div>
+            </div><!-- .phone-carousel -->
+          </div>
+          <div class="col-sm-7 padding-top mobile-center">
+            <div class="block-title light-skin">
+              <h1>Tree the World</h1>
+              <h3>Seed the future</h3>
+            </div>
+            <p class="text-light">Tree the World is a social institution leveraging the latest technologies to focus on Tree Awareness, Planting and Preservation.</p>
+            <p class="text-light">Tree the World has launched its own mobile app to further aid in Tree Awareness and social sustainability. Our app allows you to photograph and share trees via a social map.</p>
+            <p class="text-light">Our app gets people involved with trees, their beauty, their stories and location. Think location–aware Instagram for trees. Looking to find the most beautiful trees nearby? Be the first to share a tree and give it a name. Attach your (love- / inspiration- / journey-) story to the tree. Become part of giving your favorite tree(s) a personality and soul for others to enjoy.</p>
+            <!-- App Store Button -->
+            <a href="https://itunes.apple.com/us/app/tree-the-world/id1048747441" class="btn btn-app-store">
+              <i class="fa fa-apple"></i>
+              <div>
+                <span>Download on the</span>
+                App Store
+              </div>
+            </a>
+            <!-- Google Play Button -->
+            <a href="https://play.google.com/store/apps/details?id=me.jsapp.treetheworld" class="btn btn-google-play">
+              <img src="img/google-play.png" alt="Google Play">
+              <span>Get it on</span>
+            </a>
+          </div>
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </section><!-- .device-slider -->
+
+    <!-- Our Team -->
+    <section class="fw-section gray-bg angle-top mobile-center">
+      <div class="container padding-top-3x padding-bottom-3x">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="block-title featured-title">
+              <h2>a group of humble co-founders with a big vision</h2>
+              <span>Our Team</span>
+            </div><!-- .block-title.featured-title -->
+          </div><!-- .col-lg-9.col-md-10 -->
+        </div><!-- .row -->
+        <div class="row">
+          <section class="icon-block">
+            <h3 class="ib-title">Hervé Fulchiron</h3>
+            <p>Hervé Fulchiron, Master of Science in Software Engineering, is the founder of <a class="text-primary" href="http://jsapp.me" target="_blank"><strong>JSapp.me</strong></a>, an app studio specializing in the development of hybrid mobile apps. Living in the magical Playa Santa Teresa, Costa Rica, Hervé is a surfer, nature enthusiast, entrepreneur and growth hacker.</p>
+          </section><!-- .icon-block -->
+        </div><!-- .row -->
+        <div class="row">
+          <section class="icon-block">
+            <h3 class="ib-title">Marcus Trulli</h3>
+            <p>Marcus Trulli is a Canadian-born artist, advertiser and marketeer. With years of experience in North American and European marketing and advertising, Marcus specializes in driving business goals via meaningful communication including media planning and strategic marketing across both traditional and digital platforms. Currently based in Santa Teresa, Costa Rica, Marcus Trulli is working as a media consultant and donates his time towards local charity initiatives.</p>
+          </section><!-- .icon-block -->
+        </div><!-- .row -->
+        <div class="row">
+          <section class="icon-block">
+            <h3 class="ib-title">Haydee Stuart</h3>
+            <p>Haydee Stuart is originally from Los Angeles, California. She majored in Film Production with a minor in Communication while at the University of Arizona, Tucson. Upon graduating she moved back to Los Angeles where she produced multiple feature films and television shows. Since 2010 she has been visiting the Mal Pais, Santa Teresa area. Currently splitting her time between Costa Rica and United States, Haydee has since turned her focus and skills on branding and marketing for small businesses worldwide. In her off time she enjoys traveling to new places, blogging, the arts and golfing.</p>
+          </section><!-- .icon-block -->
+        </div><!-- .row -->
+        <div class="row">
+          <section class="icon-block">
+            <h3 class="ib-title">Elion Chin</h3>
+            <p>Elion Chin, PhD is an entrepreneur and angel investor. Elion was co-founder of San Francisco based MoodLogic Inc successfully sold to AMG (acquired by publicly traded Rovi Corporation). Current ventures include Localeyes (SoLoMo), Wappo (Mobile Messaging) and Tree the World (Social Venture). His strength is putting together teams to execute extraordinary business ideas and infuse his experience in corporate development and strategic partnerships. Elion's extracurricular activity include founding and promoting the ‘<a class="text-primary" href="https://www.facebook.com/SiliconBeachSTCR" target="_blank"><strong>Silicon Beach</strong></a>’ movement based in Santa Teresa, Costa Rica encouraging freelancers, entrepreneurs and geeks of all traits to work with an ocean view and find inspiration in a healthier, balancing setting.</p>
+          </section><!-- .icon-block -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </section><!-- .fw-section -->
+
+    <!-- Scroll To Top Button -->
+    <a href="#" class="scroll-to-top-btn">
+      <i class="fa fa-angle-up"></i>
+    </a><!-- .scroll-to-top-btn -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+
+            <div class="space-bottom-2x visible-xs"></div>
+            <a href="index.html" class="footer-logo">
+              <img src="img/logo-default.png" alt="ZurApp">
+            </a><!-- .footer-logo -->
+
+            <div class="social-bar">
+              <a href="https://twitter.com/treethe_world" class="sb-twitter" target="_new" data-toggle="tooltip" data-placement="top" title="Twitter">
+                <i class="fa fa-twitter"></i>
+                <span></span>
+              </a>
+              <a href="https://instagram.com/treetheworld/" target="_new" class="sb-instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                <i class="fa fa-instagram"></i>
+                <span></span>
+              </a>
+              <a href="https://www.facebook.com/treetheworld" target="_new" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                <i class="fa fa-facebook"></i>
+                <span></span>
+              </a>
+              <a href="contacts.html" class="btn btn-sm btn-warning scroll-to" data-offset-top="70">Contact us</a>
+            </div><!-- .social-bar -->
+
+            <div class="copyright">
+              <p>Mobile app and website developed by <a href="http://jsapp.me/" target="_blank">JSapp.me</a>.</p>
+            </div><!-- .copyright -->
+
+          </div><!-- .col-md-7 -->
+
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </footer><!-- .footer -->
+
+  </div><!-- .page-wrapper -->
+
+  <!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
+  <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/preloader.min.js"></script>
+  <script src="js/vendor/placeholder.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <!--<script src="js/vendor/smoothscroll.js"></script>-->
+  <script src="js/vendor/velocity.min.js"></script>
+  <script src="js/vendor/magnific-popup.min.js"></script>
+  <script src="js/vendor/owl.carousel.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-69682558-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+</body><!-- <body> -->
+
+</html>
